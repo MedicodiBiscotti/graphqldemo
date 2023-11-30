@@ -29,4 +29,15 @@ public class UserController {
     public User createUser(@Argument User user) {
         return userService.createUser(user);
     }
+
+    @MutationMapping
+    public User updateUser(@Argument User user) {
+        return userService.updateUser(user);
+    }
+
+    @MutationMapping
+    public boolean deleteUser(@Argument Long id) {
+        userService.deleteUser(id);
+        return true;
+    }
 }
