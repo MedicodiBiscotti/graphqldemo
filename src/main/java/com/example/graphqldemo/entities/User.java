@@ -8,7 +8,7 @@ import lombok.*;
 @Getter
 @Setter
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,5 +26,4 @@ public class User {
     @NonNull
     @Column(name = "email", nullable = false, length = 50)
     private String email;
-
 }
