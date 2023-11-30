@@ -3,10 +3,12 @@ package com.example.graphqldemo.services;
 import com.example.graphqldemo.entities.User;
 import com.example.graphqldemo.repositories.UserRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @RequiredArgsConstructor
+@Service
 public class UserService {
     private final UserRepository userRepository;
 
