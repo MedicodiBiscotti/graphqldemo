@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @DataJpaTest
 class UserRepositoryTest {
     @Autowired
-    UserRepository userRepository;
+    private UserRepository userRepository;
 
     @Test
     void getUser() {
